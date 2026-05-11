@@ -1,0 +1,8 @@
+[ptx-r2]
+type = s3
+provider = Cloudflare
+access_key_id = YOUR_ACCESS_KEY_ID
+secret_access_key = YOUR_SECRET_ACCESS_KEY
+endpoint = https://c173b6f9e101745fc4eab43fa68f1721.r2.cloudflarestorage.com
+acl = private
+

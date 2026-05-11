@@ -1,0 +1,29 @@
+name: Download problem
+description: Report a broken or blocked download
+title: "[Download]: "
+labels: ["download", "triage"]
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      options:
+        - PTX Studio
+        - PTX Editor Express
+        - PTX Editor Pro
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Download URL
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Include browser, OS, and any warning text.
+    validations:
+      required: true
+

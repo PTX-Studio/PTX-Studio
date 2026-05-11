@@ -1,0 +1,45 @@
+{
+  "studio": {
+    "version": "1.1.0",
+    "download": "https://download.ptxstudio.com/studio/latest/PTX%20Studio.exe",
+    "type": "standalone",
+    "standalone": true,
+    "install_type": "portable",
+    "launch_after_install": true
+  },
+
+  "editor_express": {
+    "version": "1.1.0",
+    "download": "https://download.ptxstudio.com/editor_express/latest/PTX%20Editor%20Express.exe",
+    "type": "standalone",
+    "standalone": true,
+    "install_type": "portable",
+    "launch_after_install": true
+  },
+
+  "modules": {
+    "editor_pro": {
+      "version": "1.1.0",
+      "download": "https://download.ptxstudio.com/modules/editor_pro/latest/PTX%20Editor%20Pro.exe",
+      "requires_license": true,
+      "type": "standalone",
+      "standalone": true,
+      "install_type": "portable",
+      "launch_after_install": true,
+      "exe": "PTX Editor Pro.exe",
+      "status": "available"
+    },
+
+    "creator_pro": {
+      "version": "0.0.0",
+      "download": null,
+      "requires_license": true,
+      "type": "standalone",
+      "standalone": true,
+      "install_type": "portable",
+      "launch_after_install": false,
+      "exe": "PTX Creator Pro.exe",
+      "status": "coming_soon"
+    }
+  }
+}

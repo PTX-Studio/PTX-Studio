@@ -1,0 +1,36 @@
+name: Validate release metadata
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate manifest and repo policy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON manifests
+        run: |
+          python -m json.tool ptx-download/manifest.json > /dev/null
+          if [ -f ptx-website-deployment/manifest.json ]; then
+            python -m json.tool ptx-website-deployment/manifest.json > /dev/null
+          fi
+
+      - name: Block accidental source and binary commits
+        shell: bash
+        run: |
+          blocked="$(git ls-files | grep -E '(^|/)(node_modules|src|win-unpacked|linux-unpacked|mac|mac-arm64|user-data|\\.wrangler)/|\\.(exe|dmg|AppImage|deb|rpm|7z|pfx|p12|pem|key)$' || true)"
+          if [ -n "$blocked" ]; then
+            echo "Blocked files detected:"
+            echo "$blocked"
+            exit 1
+          fi
+

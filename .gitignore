@@ -1,0 +1,81 @@
+# PTX Studio customer-facing deployment repository
+# Keep this repo documentation/release-control only. Do not commit app source,
+# unpacked Electron builds, credentials, local caches, or customer/user data.
+
+# Local operating system/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp
+*.lnk
+
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.p12
+*.key
+*.crt
+*.cer
+*.mobileprovision
+*.secrets.*
+secrets/
+credentials/
+
+# Cloudflare/Wrangler local state and account cache
+**/.wrangler/
+**/.dev.vars
+**/wrangler-account.json
+**/cf.json
+
+# Agent/local tool state
+**/.claude/
+
+# Logs and local runtime/user data
+logs/
+**/logs/
+**/dev-logs/
+**/user-data/
+**/license/license.json
+
+# Built software payloads and unpacked Electron output
+ptx-download/**/latest/**
+ptx-download/**/releases/**
+ptx-download/**/latest/*.exe
+ptx-download/**/releases/**/*.exe
+ptx-download/**/releases/**/*.dmg
+ptx-download/**/releases/**/*.AppImage
+ptx-download/**/releases/**/*.deb
+ptx-download/**/releases/**/*.rpm
+ptx-download/**/releases/**/*.zip
+ptx-download/**/releases/**/*.7z
+ptx-download/**/releases/**/win-unpacked/
+ptx-download/**/releases/**/linux-unpacked/
+ptx-download/**/releases/**/mac/
+ptx-download/**/releases/**/mac-arm64/
+ptx-download/**/releases/**/builder-debug.yml
+
+# Source-bearing website/worker deployments are intentionally not published
+# through this customer-facing repository unless Mario explicitly changes this.
+ptx-website-deployment/**
+!ptx-website-deployment/
+!ptx-website-deployment/manifest.json
+!ptx-website-deployment/Software Downloads and naming directory.txt
+ptx-website-deployment/PTX Website/
+ptx-website-deployment/ptx-license-worker/
+ptx-website-deployment/.wrangler/
+ptx-website-deployment/.claude/
+
+# Keep public release metadata and no-secret R2 helper docs/scripts visible.
+!ptx-download/manifest.json
+!ptx-download/Software Downloads and naming directory.txt
+!R2_UPLOAD_ACCESS/
+!R2_UPLOAD_ACCESS/*.ps1
+!R2_UPLOAD_ACCESS/*.cmd
+!R2_UPLOAD_ACCESS/*.example
+!R2_UPLOAD_ACCESS/README.md
+!R2_UPLOAD_ACCESS/logs/.gitkeep
