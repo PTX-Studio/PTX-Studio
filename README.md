@@ -1,6 +1,6 @@
 # PTX Studio
 
-This is the public customer-facing home for PTX Studio support, release notes, and security information.
+This is the public customer-facing home for PTX Studio support, releases, and security information.
 
 It does not contain PTX Studio application source code, server configuration, deployment scripts, private infrastructure details, or release storage metadata.
 
@@ -13,6 +13,10 @@ It does not contain PTX Studio application source code, server configuration, de
 ## Downloads
 
 Use the official PTX Studio website for current downloads and account-related actions.
+
+## Releases
+
+Customer-facing release notes live in [releases](releases). GitHub's built-in Releases page can also be used for public release announcements and downloadable attachments.
 
 ## Release Model
 

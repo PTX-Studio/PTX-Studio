@@ -53,8 +53,6 @@ logs/
 dist/
 build/
 out/
-release/
-releases/
 ptx-download/
 ptx-website-deployment/
 R2_UPLOAD_ACCESS/
