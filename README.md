@@ -4,6 +4,8 @@ This is the public customer-facing home for PTX Studio support, releases, and se
 
 It does not contain PTX Studio application source code, server configuration, deployment scripts, private infrastructure details, or release storage metadata.
 
+PTX Studio is proprietary software. This repository is not an open-source software repository, and no license is granted to copy, modify, redistribute, or reuse PTX Studio application code or assets.
+
 ## Current Products
 
 - PTX Studio
@@ -21,6 +23,10 @@ Customer-facing release notes live in [releases](releases). GitHub's built-in Re
 ## Launch
 
 Repository launch steps are documented in [docs/launch-checklist.md](docs/launch-checklist.md).
+
+## Contributions
+
+Issues, bug reports, and product suggestions are welcome. Code contributions are accepted only from approved collaborators. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Release Model
 

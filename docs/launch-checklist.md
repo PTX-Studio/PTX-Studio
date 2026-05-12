@@ -18,9 +18,11 @@ Use this checklist when publishing the PTX Studio customer-facing GitHub reposit
 - Visibility: public
 - Default branch: `main`
 - Issues: enabled
+- Pull requests: enabled, preferably restricted to collaborators only if available
 - Discussions: optional
 - Wiki: disabled
 - Projects: optional
+- Forking: disable only if GitHub shows the option for this organization/repository
 - Preserve this repository: enabled
 - Automatically delete head branches: optional
 
@@ -44,6 +46,8 @@ Use this checklist when publishing the PTX Studio customer-facing GitHub reposit
 - Add the official PTX Studio website URL in the repository About panel.
 - Review repository Settings > General.
 - Review repository Settings > Security.
+- Confirm the repository does not display any server-facing folders or files.
+- Confirm the contribution policy states that PTX Studio is proprietary.
 
 ## First GitHub Release
 
@@ -57,4 +61,3 @@ Create the first GitHub Release from GitHub.com:
 6. Publish when ready.
 
 Use GitHub Release attachments only for public files you intentionally want customers to download from GitHub.
-

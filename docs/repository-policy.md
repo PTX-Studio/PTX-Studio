@@ -2,6 +2,8 @@
 
 This repository is safe to make public only if it remains customer-facing.
 
+PTX Studio is proprietary software. Public visibility of this repository does not make PTX Studio open source and does not grant a license to reuse product code, private assets, trademarks, infrastructure, or release systems.
+
 ## Allowed
 
 - Public README, support, security, and changelog files
@@ -19,6 +21,10 @@ This repository is safe to make public only if it remains customer-facing.
 - Credentials, API tokens, signing certificates, or passwords
 - License files or customer/user data
 - Local logs
+
+## Contribution Boundary
+
+Issues are open for customer reports and suggestions. Pull requests should be limited to customer-facing documentation corrections or approved collaborator changes.
 
 ## Internal Work Boundary
 
