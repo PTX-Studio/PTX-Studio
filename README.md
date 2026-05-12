@@ -18,6 +18,10 @@ Use the official PTX Studio website for current downloads and account-related ac
 
 Customer-facing release notes live in [releases](releases). GitHub's built-in Releases page can also be used for public release announcements and downloadable attachments.
 
+## Launch
+
+Repository launch steps are documented in [docs/launch-checklist.md](docs/launch-checklist.md).
+
 ## Release Model
 
 PTX Studio currently ships as portable standalone applications:
