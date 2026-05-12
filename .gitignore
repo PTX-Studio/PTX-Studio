@@ -59,16 +59,9 @@ ptx-download/**/releases/**/mac/
 ptx-download/**/releases/**/mac-arm64/
 ptx-download/**/releases/**/builder-debug.yml
 
-# Source-bearing website/worker deployments are intentionally not published
-# through this customer-facing repository unless Mario explicitly changes this.
+# Website/worker deployments are intentionally not published through this
+# customer-facing repository.
 ptx-website-deployment/**
-!ptx-website-deployment/
-!ptx-website-deployment/manifest.json
-!ptx-website-deployment/Software Downloads and naming directory.txt
-ptx-website-deployment/PTX Website/
-ptx-website-deployment/ptx-license-worker/
-ptx-website-deployment/.wrangler/
-ptx-website-deployment/.claude/
 
 # Keep public release metadata and no-secret R2 helper docs/scripts visible.
 !ptx-download/manifest.json

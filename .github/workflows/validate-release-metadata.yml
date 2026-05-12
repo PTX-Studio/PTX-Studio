@@ -20,9 +20,6 @@ jobs:
       - name: Validate JSON manifests
         run: |
           python -m json.tool ptx-download/manifest.json > /dev/null
-          if [ -f ptx-website-deployment/manifest.json ]; then
-            python -m json.tool ptx-website-deployment/manifest.json > /dev/null
-          fi
 
       - name: Block accidental source and binary commits
         shell: bash
@@ -33,4 +30,3 @@ jobs:
             echo "$blocked"
             exit 1
           fi
-

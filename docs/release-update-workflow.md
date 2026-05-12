@@ -25,7 +25,6 @@ Then update the matching `latest` file only after the release is approved.
 Update:
 
 - `ptx-download/manifest.json`
-- `ptx-website-deployment/manifest.json`, if still used by the website
 - `CHANGELOG.md`
 - `release-notes/X.Y.Z.md`
 
