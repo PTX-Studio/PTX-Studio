@@ -1,6 +1,6 @@
-# PTX Studio customer-facing deployment repository
-# Keep this repo documentation/release-control only. Do not commit app source,
-# unpacked Electron builds, credentials, local caches, or customer/user data.
+# PTX Studio customer-facing repository
+# Keep this repo public-safe: no source, binaries, server configuration,
+# deployment scripts, credentials, local caches, or customer/user data.
 
 # Local operating system/editor noise
 .DS_Store
@@ -26,7 +26,7 @@ desktop.ini
 secrets/
 credentials/
 
-# Cloudflare/Wrangler local state and account cache
+# Local service/tool state
 **/.wrangler/
 **/.dev.vars
 **/wrangler-account.json
@@ -42,33 +42,26 @@ logs/
 **/user-data/
 **/license/license.json
 
-# Built software payloads and unpacked Electron output
-ptx-download/**/latest/**
-ptx-download/**/releases/**
-ptx-download/**/latest/*.exe
-ptx-download/**/releases/**/*.exe
-ptx-download/**/releases/**/*.dmg
-ptx-download/**/releases/**/*.AppImage
-ptx-download/**/releases/**/*.deb
-ptx-download/**/releases/**/*.rpm
-ptx-download/**/releases/**/*.zip
-ptx-download/**/releases/**/*.7z
-ptx-download/**/releases/**/win-unpacked/
-ptx-download/**/releases/**/linux-unpacked/
-ptx-download/**/releases/**/mac/
-ptx-download/**/releases/**/mac-arm64/
-ptx-download/**/releases/**/builder-debug.yml
-
-# Website/worker deployments are intentionally not published through this
-# customer-facing repository.
-ptx-website-deployment/**
-
-# Keep public release metadata and no-secret R2 helper docs/scripts visible.
-!ptx-download/manifest.json
-!ptx-download/Software Downloads and naming directory.txt
-!R2_UPLOAD_ACCESS/
-!R2_UPLOAD_ACCESS/*.ps1
-!R2_UPLOAD_ACCESS/*.cmd
-!R2_UPLOAD_ACCESS/*.example
-!R2_UPLOAD_ACCESS/README.md
-!R2_UPLOAD_ACCESS/logs/.gitkeep
+# Built software payloads, deployment mirrors, and server-facing folders
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.rpm
+*.zip
+*.7z
+dist/
+build/
+out/
+release/
+releases/
+ptx-download/
+ptx-website-deployment/
+R2_UPLOAD_ACCESS/
+server/
+servers/
+infrastructure/
+infra/
+deploy/
+deployment/
+deployments/
