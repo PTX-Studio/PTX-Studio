@@ -2,14 +2,12 @@
 
 ## Local Repository
 
-This folder is the customer-facing Git repository:
-
-`D:\Dev Folder\PTX Studio\Deployments\Github`
+This folder is the customer-facing Git repository.
 
 Use GitHub Desktop:
 
 1. File > Add local repository.
-2. Choose `D:\Dev Folder\PTX Studio\Deployments\Github`.
+2. Choose the local folder that contains this repository.
 3. Review changed files before the first commit.
 4. Create the repository on GitHub as public only after checking that no private, server-facing, binary, or deployment files are staged.
 
