@@ -41,6 +41,7 @@ $allowlistedFiles = @(
     'docs/github-releases.md',
     'docs/repository-policy.md',
     'docs/public-safety-scan.md',
+    'scripts/public-safety-scan.ps1',
     'releases/README.md'
 )
 
