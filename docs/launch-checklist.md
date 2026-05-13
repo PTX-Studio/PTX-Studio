@@ -5,6 +5,7 @@ Use this checklist when publishing the PTX Studio customer-facing GitHub reposit
 ## Local Preflight
 
 - Confirm `git status` is clean.
+- Run `powershell -ExecutionPolicy Bypass -File .\scripts\public-safety-scan.ps1`.
 - Confirm you are working from the intended local checkout of this repository.
 - Confirm no application binaries are tracked.
 - Confirm no server, storage, hosting, deployment, or private infrastructure files are tracked.
