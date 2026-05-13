@@ -17,35 +17,33 @@ On your computer, two files with the same name cannot live in the same folder.
 That is why local releases should use version folders:
 
 ```text
-Deployments
-└─ ptx-download
-   ├─ studio
+Local release storage
+├─ studio
+│  ├─ latest
+│  │  └─ PTX Studio.exe                ← current live/current version
+│  └─ releases
+│     ├─ v1.1.0
+│     │  └─ PTX Studio.exe             ← archived v1.1.0 copy
+│     └─ v1.2.0
+│        └─ PTX Studio.exe             ← archived v1.2.0 copy
+│
+├─ editor_express
+│  ├─ latest
+│  │  └─ PTX Editor Express.exe
+│  └─ releases
+│     ├─ v1.1.0
+│     │  └─ PTX Editor Express.exe
+│     └─ v1.2.0
+│        └─ PTX Editor Express.exe
+│
+└─ editor_pro
    │  ├─ latest
-   │  │  └─ PTX Studio.exe                ← current live/current version
+   │  │  └─ PTX Editor Pro.exe
    │  └─ releases
    │     ├─ v1.1.0
-   │     │  └─ PTX Studio.exe             ← archived v1.1.0 copy
+   │     │  └─ PTX Editor Pro.exe
    │     └─ v1.2.0
-   │        └─ PTX Studio.exe             ← archived v1.2.0 copy
-   │
-   ├─ editor_express
-   │  ├─ latest
-   │  │  └─ PTX Editor Express.exe
-   │  └─ releases
-   │     ├─ v1.1.0
-   │     │  └─ PTX Editor Express.exe
-   │     └─ v1.2.0
-   │        └─ PTX Editor Express.exe
-   │
-   └─ modules
-      └─ editor_pro
-         ├─ latest
-         │  └─ PTX Editor Pro.exe
-         └─ releases
-            ├─ v1.1.0
-            │  └─ PTX Editor Pro.exe
-            └─ v1.2.0
-               └─ PTX Editor Pro.exe
+   │        └─ PTX Editor Pro.exe
 ```
 
 The `latest` folders are allowed to overwrite old files because `latest` means "current version."
@@ -90,9 +88,9 @@ Example: releasing `v1.2.0`.
 Put the approved files here:
 
 ```text
-ptx-download\studio\releases\v1.2.0\PTX Studio.exe
-ptx-download\editor_express\releases\v1.2.0\PTX Editor Express.exe
-ptx-download\modules\editor_pro\releases\v1.2.0\PTX Editor Pro.exe
+studio\releases\v1.2.0\PTX Studio.exe
+editor_express\releases\v1.2.0\PTX Editor Express.exe
+editor_pro\releases\v1.2.0\PTX Editor Pro.exe
 ```
 
 ### Step 2: Update Latest
@@ -100,9 +98,9 @@ ptx-download\modules\editor_pro\releases\v1.2.0\PTX Editor Pro.exe
 Copy the same files into:
 
 ```text
-ptx-download\studio\latest\PTX Studio.exe
-ptx-download\editor_express\latest\PTX Editor Express.exe
-ptx-download\modules\editor_pro\latest\PTX Editor Pro.exe
+studio\latest\PTX Studio.exe
+editor_express\latest\PTX Editor Express.exe
+editor_pro\latest\PTX Editor Pro.exe
 ```
 
 Windows will ask to overwrite in `latest`. That is expected.
@@ -149,4 +147,3 @@ GitHub:
 ```text
 Release tags separate versions.
 ```
-
