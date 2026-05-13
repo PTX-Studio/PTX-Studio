@@ -1,6 +1,6 @@
 # PTX Studio customer-facing repository
-# Keep this repo public-safe: no source, binaries, server configuration,
-# deployment scripts, credentials, local caches, or customer/user data.
+# Keep this repo public-safe: no source, binaries, credentials, local caches,
+# or customer/user data.
 
 # Local operating system/editor noise
 .DS_Store
@@ -40,9 +40,8 @@ logs/
 **/logs/
 **/dev-logs/
 **/user-data/
-**/license/license.json
 
-# Built software payloads, deployment mirrors, and server-facing folders
+# Built software payloads and private operational folders
 *.exe
 *.dmg
 *.AppImage
@@ -53,13 +52,8 @@ logs/
 dist/
 build/
 out/
-ptx-download/
-ptx-website-deployment/
-R2_UPLOAD_ACCESS/
 server/
 servers/
 infrastructure/
 infra/
 deploy/
-deployment/
-deployments/

@@ -20,10 +20,6 @@ Use the official PTX Studio website for current downloads and account-related ac
 
 Customer-facing release notes live in [releases](releases). GitHub's built-in Releases page can also be used for public release announcements and downloadable attachments.
 
-## Launch
-
-Repository launch steps are documented in [docs/launch-checklist.md](docs/launch-checklist.md).
-
 ## Contributions
 
 Issues, bug reports, and product suggestions are welcome. Code contributions are accepted only from approved collaborators. See [CONTRIBUTING.md](CONTRIBUTING.md).
